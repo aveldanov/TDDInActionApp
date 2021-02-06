@@ -7,6 +7,8 @@
 
 import XCTest
 
+@testable import TDDInActionApp
+
 class TDDInActionAppTests: XCTestCase {
 
     override func setUpWithError() throws {
@@ -28,5 +30,4 @@ class TDDInActionAppTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
 }
