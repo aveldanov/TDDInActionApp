@@ -81,25 +81,25 @@ class SignUpFormModelValidatorTests: XCTestCase {
         
     }
     
-    func skip_testSignupFormModelValidator_WhenTooLongLastNameProvided_ShouldReturnFalse() {
+    func testSignupFormModelValidator_WhenTooLongLastNameProvided_ShouldReturnFalse() {
         
-        let isLastNameValid = sut.isLastNameValid(lastName: "KargopolovKargopolov")
+        let isLastNameValid = sut.isLastNameValid(lastName: "VeldanovVeldanov")
         
         XCTAssertFalse(isLastNameValid, "The isLastNameValid() should have returned FALSE for a last name that is longer than \(SignUpConstants.lastNameMaxLength) characters but it has returned TRUE")
     }
     
-//    // MARK: Email Address Validation
-//    func skip_testSignupFormModelValidator_WhenValidEmailProvided_ShouldReturnTrue() {
-//        let isValidEmailFormat = sut.isValidEmailFormat(email: "test@test.com")
-//        
-//        XCTAssertTrue(isValidEmailFormat, "Provided valid email address format but validation did not pass")
-//    }
-//    
-//    func skip_testSignupFormModelValidator_WhenInValidEmailProvided_ShouldReturnFalse() {
-//        let isValidEmailFormat = sut.isValidEmailFormat(email: "test@test")
-//        
-//        XCTAssertFalse(isValidEmailFormat, "Provided invalid email address format but validation still passed")
-//    }
+    // MARK: Email Address Validation
+    func testSignupFormModelValidator_WhenValidEmailProvided_ShouldReturnTrue() {
+        let isValidEmailFormat = sut.isValidEmailFormat(email: "test@test.com")
+        
+        XCTAssertTrue(isValidEmailFormat, "Provided valid email address format but validation did not pass")
+    }
+    
+    func testSignupFormModelValidator_WhenInValidEmailProvided_ShouldReturnFalse() {
+        let isValidEmailFormat = sut.isValidEmailFormat(email: "test@test")
+        
+        XCTAssertFalse(isValidEmailFormat, "Provided invalid email address format but validation still passed")
+    }
     
     
 
