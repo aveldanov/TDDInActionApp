@@ -121,7 +121,7 @@ class SignUpFormModelValidatorTests: XCTestCase {
         let isPasswordValid = sut.isPasswordValid(password: "12")
         
         // Assert
-        XCTAssertFalse(isPasswordValid, "The isPasswordValid() should have returned FALSE for a password that is shorter than \(SignupConstants.passwordMinLength) but it has returned TRUE")
+        XCTAssertFalse(isPasswordValid, "The isPasswordValid() should have returned FALSE for a password that is shorter than \(SignUpConstants.passwordMinLength) but it has returned TRUE")
         
     }
     
@@ -131,7 +131,7 @@ class SignUpFormModelValidatorTests: XCTestCase {
         let isPasswordValid = sut.isPasswordValid(password: "12345678901234567")
         
         // Assert
-        XCTAssertFalse(isPasswordValid, "The isPasswordValid() should have returned FALSE for a password that is longer than \(SignupConstants.passwordMaxLength) but it has returned TRUE")
+        XCTAssertFalse(isPasswordValid, "The isPasswordValid() should have returned FALSE for a password that is longer than \(SignUpConstants.passwordMaxLength) but it has returned TRUE")
         
     }
     
