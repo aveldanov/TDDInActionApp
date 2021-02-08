@@ -70,7 +70,7 @@ class SignUpFormModelValidatorTests: XCTestCase {
         XCTAssertTrue(isLastNameValid, "The isLastNameValid() should have returned TRUE for a valid last name but returned FALSE")
     }
     
-    func skip_testSignupFormModelValidator_WhenTooShortLastNameProvided_ShouldReturnFalse() {
+    func testSignupFormModelValidator_WhenTooShortLastNameProvided_ShouldReturnFalse() {
         
         // Arrange
         // Act
@@ -81,13 +81,13 @@ class SignUpFormModelValidatorTests: XCTestCase {
         
     }
     
-//    func skip_testSignupFormModelValidator_WhenTooLongLastNameProvided_ShouldReturnFalse() {
-//        
-//        let isLastNameValid = sut.isLastNameValid(lastName: "KargopolovKargopolov")
-//        
-//        XCTAssertFalse(isLastNameValid, "The isLastNameValid() should have returned FALSE for a last name that is longer than \(SignupConstants.lastNameMaxLength) characters but it has returned TRUE")
-//    }
-//    
+    func skip_testSignupFormModelValidator_WhenTooLongLastNameProvided_ShouldReturnFalse() {
+        
+        let isLastNameValid = sut.isLastNameValid(lastName: "KargopolovKargopolov")
+        
+        XCTAssertFalse(isLastNameValid, "The isLastNameValid() should have returned FALSE for a last name that is longer than \(SignUpConstants.lastNameMaxLength) characters but it has returned TRUE")
+    }
+    
 //    // MARK: Email Address Validation
 //    func skip_testSignupFormModelValidator_WhenValidEmailProvided_ShouldReturnTrue() {
 //        let isValidEmailFormat = sut.isValidEmailFormat(email: "test@test.com")
