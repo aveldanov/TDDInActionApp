@@ -17,6 +17,8 @@
 		212C991B25D0C4D500DCB480 /* SignUpFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212C991A25D0C4D500DCB480 /* SignUpFormModelValidatorTests.swift */; };
 		212C992125D0C58700DCB480 /* SignUpFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212C992025D0C58700DCB480 /* SignUpFormModelValidator.swift */; };
 		212C992625D0C62400DCB480 /* SignUpFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212C992025D0C58700DCB480 /* SignUpFormModelValidator.swift */; };
+		212C992C25D0CA6200DCB480 /* SignUpConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212C992B25D0CA6200DCB480 /* SignUpConstants.swift */; };
+		212C992F25D0CADB00DCB480 /* SignUpConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212C992B25D0CA6200DCB480 /* SignUpConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,7 @@
 		212C991025D0C4AC00DCB480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		212C991A25D0C4D500DCB480 /* SignUpFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidatorTests.swift; sourceTree = "<group>"; };
 		212C992025D0C58700DCB480 /* SignUpFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidator.swift; sourceTree = "<group>"; };
+		212C992B25D0CA6200DCB480 /* SignUpConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,7 @@
 				212C98FE25D0C49900DCB480 /* LaunchScreen.storyboard */,
 				212C990125D0C49900DCB480 /* Info.plist */,
 				212C98F925D0C49600DCB480 /* TDDInActionApp.xcdatamodeld */,
+				212C992B25D0CA6200DCB480 /* SignUpConstants.swift */,
 			);
 			path = TDDInActionApp;
 			sourceTree = "<group>";
@@ -207,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				212C98F525D0C49600DCB480 /* ViewController.swift in Sources */,
+				212C992C25D0CA6200DCB480 /* SignUpConstants.swift in Sources */,
 				212C992125D0C58700DCB480 /* SignUpFormModelValidator.swift in Sources */,
 				212C98FB25D0C49600DCB480 /* TDDInActionApp.xcdatamodeld in Sources */,
 				212C98F125D0C49600DCB480 /* AppDelegate.swift in Sources */,
@@ -219,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				212C992625D0C62400DCB480 /* SignUpFormModelValidator.swift in Sources */,
+				212C992F25D0CADB00DCB480 /* SignUpConstants.swift in Sources */,
 				212C991B25D0C4D500DCB480 /* SignUpFormModelValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
