@@ -15,6 +15,8 @@
 		212C98FD25D0C49900DCB480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212C98FC25D0C49900DCB480 /* Assets.xcassets */; };
 		212C990025D0C49900DCB480 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212C98FE25D0C49900DCB480 /* LaunchScreen.storyboard */; };
 		212C991B25D0C4D500DCB480 /* SignUpFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212C991A25D0C4D500DCB480 /* SignUpFormModelValidatorTests.swift */; };
+		212C992125D0C58700DCB480 /* SignUpFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212C992025D0C58700DCB480 /* SignUpFormModelValidator.swift */; };
+		212C992625D0C62400DCB480 /* SignUpFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212C992025D0C58700DCB480 /* SignUpFormModelValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,7 @@
 		212C990C25D0C4AC00DCB480 /* TDDInActionAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDInActionAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		212C991025D0C4AC00DCB480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		212C991A25D0C4D500DCB480 /* SignUpFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidatorTests.swift; sourceTree = "<group>"; };
+		212C992025D0C58700DCB480 /* SignUpFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 				212C98F225D0C49600DCB480 /* SceneDelegate.swift */,
 				212C98F425D0C49600DCB480 /* ViewController.swift */,
 				212C98F625D0C49600DCB480 /* Main.storyboard */,
+				212C992025D0C58700DCB480 /* SignUpFormModelValidator.swift */,
 				212C98FC25D0C49900DCB480 /* Assets.xcassets */,
 				212C98FE25D0C49900DCB480 /* LaunchScreen.storyboard */,
 				212C990125D0C49900DCB480 /* Info.plist */,
@@ -155,7 +159,6 @@
 					212C990B25D0C4AC00DCB480 = {
 						CreatedOnToolsVersion = 12.4;
 						LastSwiftMigration = 1240;
-						TestTargetID = 212C98EC25D0C49600DCB480;
 					};
 				};
 			};
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				212C98F525D0C49600DCB480 /* ViewController.swift in Sources */,
+				212C992125D0C58700DCB480 /* SignUpFormModelValidator.swift in Sources */,
 				212C98FB25D0C49600DCB480 /* TDDInActionApp.xcdatamodeld in Sources */,
 				212C98F125D0C49600DCB480 /* AppDelegate.swift in Sources */,
 				212C98F325D0C49600DCB480 /* SceneDelegate.swift in Sources */,
@@ -214,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				212C992625D0C62400DCB480 /* SignUpFormModelValidator.swift in Sources */,
 				212C991B25D0C4D500DCB480 /* SignUpFormModelValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,7 +410,6 @@
 		212C991425D0C4AC00DCB480 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QLJ84Q3ZSY;
@@ -420,14 +424,12 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDDInActionApp.app/TDDInActionApp";
 			};
 			name = Debug;
 		};
 		212C991525D0C4AC00DCB480 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QLJ84Q3ZSY;
@@ -441,7 +443,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDDInActionApp.app/TDDInActionApp";
 			};
 			name = Release;
 		};

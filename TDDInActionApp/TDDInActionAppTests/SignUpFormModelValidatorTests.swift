@@ -7,6 +7,8 @@
 
 import XCTest
 
+@testable import TDDInActionApp
+
 class SignUpFormModelValidatorTests: XCTestCase {
 
     override func setUpWithError() throws {
@@ -17,16 +19,18 @@ class SignUpFormModelValidatorTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testSignUpFormModelValidator_WhenValidFirstNameProvided_ShouldReturnTrue(){
+        
+        //Arrange
+        let sut = SignUpFormModelValidator()
+        //Act
+        
+        let isFirstNameValid = sut.isFirstNameValid(firstName: "Anton")
+        //Assert
+        XCTAssertTrue(isFirstNameValid,"The isFirstNameValid should have returned True, but returned False")
+        
     }
 
 }
