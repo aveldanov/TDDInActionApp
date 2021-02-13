@@ -50,5 +50,4 @@ class SignUpFormModelValidator{
         return password == repeatPassword
     }
     
-    
 }
