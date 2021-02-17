@@ -15,7 +15,6 @@ class SignUpFormModelValidator{
         if firstName.count < SignUpConstants.firstNameMinLength || firstName.count > SignUpConstants.firstNameMaxLength{
             returnValue = false
         }
-        
         return returnValue
     }
     
@@ -41,7 +40,6 @@ class SignUpFormModelValidator{
         password.count > SignUpConstants.passwordMaxLength {
             returnValue = false
         }
-        
         return returnValue
     }
     
