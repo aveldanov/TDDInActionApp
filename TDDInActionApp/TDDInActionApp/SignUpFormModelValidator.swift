@@ -17,7 +17,6 @@ class SignUpFormModelValidator{
         }
         
         return returnValue
-        
     }
     
     func isLastNameValid(lastName: String) -> Bool{
