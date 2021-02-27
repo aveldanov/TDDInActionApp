@@ -24,7 +24,6 @@ class SignUpFormModelValidator{
             returnValue = false
         }
         return returnValue
-
     }
     
     
