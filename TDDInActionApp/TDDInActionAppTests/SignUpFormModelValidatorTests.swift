@@ -58,7 +58,6 @@ class SignUpFormModelValidatorTests: XCTestCase {
     }
     
     
-    
     // MARK: Last Name Validation Unit Tests
     func testSignFormModelValidator_WhenValidLastNameProvided_ShouldReturnTrue() {
         
