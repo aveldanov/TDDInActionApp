@@ -34,7 +34,6 @@ class SignUpFormModelValidator{
     
     func isPasswordValid(password: String) -> Bool {
         var returnValue = true
-        
         if password.count < SignUpConstants.passwordMinLength ||
         password.count > SignUpConstants.passwordMaxLength {
             returnValue = false
