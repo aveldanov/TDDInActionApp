@@ -108,7 +108,6 @@ class SignUpFormModelValidatorTests: XCTestCase {
         
         // Assert
         XCTAssertTrue(isPasswordValid, "The isPasswordValid() should have returned TRUE for a valid password  but it has returned FALSE")
-        
     }
     
     func testSignupFormModelValidator_WhenTooShortPasswordProvided_ShouldReturnFalse() {
@@ -118,7 +117,6 @@ class SignUpFormModelValidatorTests: XCTestCase {
         
         // Assert
         XCTAssertFalse(isPasswordValid, "The isPasswordValid() should have returned FALSE for a password that is shorter than \(SignUpConstants.passwordMinLength) but it has returned TRUE")
-        
     }
     
     func testSignupFormModelValidator_WhenTooLongPasswordProvided_ShouldReturnFalse() {
@@ -128,7 +126,6 @@ class SignUpFormModelValidatorTests: XCTestCase {
         
         // Assert
         XCTAssertFalse(isPasswordValid, "The isPasswordValid() should have returned FALSE for a password that is longer than \(SignUpConstants.passwordMaxLength) but it has returned TRUE")
-        
     }
     
     func testSignupFormModelValidator_WhenEqualPasswordsProvided_ShouldReturnTrue() {
