@@ -21,8 +21,6 @@ class SignUpFormModelValidatorTests: XCTestCase {
         sut = nil
     }
 
-
-    
     func testSignUpFormModelValidator_WhenValidFirstNameProvided_ShouldReturnTrue(){
         
         //Arrange
