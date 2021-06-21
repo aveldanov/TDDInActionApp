@@ -23,11 +23,11 @@ class SignUpFormModelValidatorTests: XCTestCase {
     func testSignUpModelValidator_WhenValidFirstNameProvided_ShouldReturnTrue(){
         
         //Arrange
-        let sut = SignInFormModelValidator()
+        let sut = SignUpFormModelValidator()
         
         
         //Act
-        
+        sut.isFirstNameValid(firstName:"Anton")
         
         //Assert
         
