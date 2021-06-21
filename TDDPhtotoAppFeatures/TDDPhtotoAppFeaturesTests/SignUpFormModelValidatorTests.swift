@@ -11,26 +11,43 @@ import XCTest
 
 class SignUpFormModelValidatorTests: XCTestCase {
 
+    var sut: SignUpFormModelValidator!
+
+    
     override func setUpWithError() throws {
-        
+        sut = SignUpFormModelValidator()
     }
 
     override func tearDownWithError() throws {
-        
+        sut = nil
     }
     
     
     func testSignUpModelValidator_WhenValidFirstNameProvided_ShouldReturnTrue(){
         
         //Arrange
-        let sut = SignUpFormModelValidator()
         
         
         //Act
-        sut.isFirstNameValid(firstName:"Anton")
+        let isFirstNameValid = sut.isFirstNameValid(firstName:"Anton")
         
         //Assert
         
+        XCTAssertTrue(isFirstNameValid, "The isFirstNameValis() should have returned True, but returned False")
+        
+    }
+    
+    
+    func testSignUpModelValidator_WhenTooShortFirstNameProvided_ShouldReturnFalse(){
+        //Arrange
+
+        
+        //Act
+        let isFirstNameValid = sut.isFirstNameValid(firstName: "e")
+        
+        //Assert
+        
+        XCTAssertFalse(isFirstNameValid,"The firstNameValid() should return false when too short")
         
     }
 
