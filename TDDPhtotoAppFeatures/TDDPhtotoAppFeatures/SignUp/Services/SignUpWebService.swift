@@ -10,11 +10,17 @@ import Foundation
 
 
 class SignUpWebService{
-
+    //mocking
+    
+    private var urlSession: URLSession
+    
+    
+    
     private var urlString: String
     
-    init(urlString: String){
+    init(urlString: String, urlSession: URLSession = .shared){
         self.urlString = urlString
+        self.urlSession = urlSession
     }
     
     
@@ -32,8 +38,25 @@ class SignUpWebService{
         
         request.httpBody = try? JSONEncoder().encode(formModel)
         
+        
+        //GET
+        
+        let dataTask = URLSession.shared.dataTask(with: request) { data, response, error in
+            //TODO handle error
+            
+            if let data = data {
+                let signUpResponseModel = try? JSONDecoder().decode(SignUpResponseModel.self, from: data)
+                
+                completion(signUpResponseModel, nil)
+            }else{
+                //TODO
+            }
+        }
+        
+        dataTask.resume()
+        
     }
-
+    
     
     
     

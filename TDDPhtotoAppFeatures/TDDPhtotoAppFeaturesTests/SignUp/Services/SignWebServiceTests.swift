@@ -23,6 +23,8 @@ class SignWebServiceTests: XCTestCase {
     
     func testSignupWebService_WhenGivenSuccessfullResponse_ReturnsSuccess(){
         //Arrange
+        
+        // update plist to run not secured http
         let sut = SignUpWebService(urlString: "http://appsdeveloperblog.com:8080/signup-mock-service/users")
         
         let signUpFormRequestModel = SignUpFormRequestModel(firstName: "Anton", lastName: "Vel", email: "test@test.com", password: "12345678")
