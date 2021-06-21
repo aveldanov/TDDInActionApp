@@ -7,14 +7,31 @@
 
 import XCTest
 
+@testable import TDDPhtotoAppFeatures
+
 class SignUpFormModelValidatorTests: XCTestCase {
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        
+    }
+    
+    
+    func testSignUpModelValidator_WhenValidFirstNameProvided_ShouldReturnTrue(){
+        
+        //Arrange
+        let sut = SignInFormModelValidator()
+        
+        
+        //Act
+        
+        
+        //Assert
+        
+        
     }
 
 

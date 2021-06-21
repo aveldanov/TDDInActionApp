@@ -14,6 +14,7 @@
 		217A0CDC268026AB008705A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 217A0CDB268026AB008705A9 /* Assets.xcassets */; };
 		217A0CDF268026AB008705A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217A0CDD268026AB008705A9 /* LaunchScreen.storyboard */; };
 		217A0CF726803207008705A9 /* SignUpFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217A0CF626803207008705A9 /* SignUpFormModelValidatorTests.swift */; };
+		217A0CF9268032C9008705A9 /* SignUpFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217A0CF8268032C9008705A9 /* SignUpFormModelValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		217A0CEA26802922008705A9 /* TDDPhtotoAppFeaturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDPhtotoAppFeaturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		217A0CEE26802922008705A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		217A0CF626803207008705A9 /* SignUpFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidatorTests.swift; sourceTree = "<group>"; };
+		217A0CF8268032C9008705A9 /* SignUpFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				217A0CDB268026AB008705A9 /* Assets.xcassets */,
 				217A0CDD268026AB008705A9 /* LaunchScreen.storyboard */,
 				217A0CE0268026AB008705A9 /* Info.plist */,
+				217A0CF8268032C9008705A9 /* SignUpFormModelValidator.swift */,
 			);
 			path = TDDPhtotoAppFeatures;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			files = (
 				217A0CD7268026A8008705A9 /* ViewController.swift in Sources */,
 				217A0CD3268026A8008705A9 /* AppDelegate.swift in Sources */,
+				217A0CF9268032C9008705A9 /* SignUpFormModelValidator.swift in Sources */,
 				217A0CD5268026A8008705A9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
