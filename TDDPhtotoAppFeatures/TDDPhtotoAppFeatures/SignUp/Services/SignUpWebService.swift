@@ -40,7 +40,7 @@ class SignUpWebService{
         
         
         //GET
-        
+        print(urlSession)
         let dataTask = URLSession.shared.dataTask(with: request) { data, response, error in
             //TODO handle error
             

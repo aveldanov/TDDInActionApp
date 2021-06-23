@@ -11,23 +11,51 @@ import XCTest
 
 class SignWebServiceTests: XCTestCase {
     
+    var sut: SignUpWebService!
+    var signUpFormRequestModel: SignUpFormRequestModel!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        let config = URLSessionConfiguration.ephemeral
+        config.protocolClasses = [MockURLProtocol.self]
+        let urlSession = URLSession(configuration: config)
+        sut = SignUpWebService(urlString: "http://appsdeveloperblog.com:8080/signup-mock-service/users", urlSession: urlSession)
+         signUpFormRequestModel = SignUpFormRequestModel(firstName: "Anton", lastName: "Vel", email: "test@test.com", password: "12345678")
     }
     
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
+        signUpFormRequestModel = nil
+        MockURLProtocol.stubResponseData = nil
+//        MockURLProtocol.error = nil
     }
     
     
     
     func testSignupWebService_WhenGivenSuccessfullResponse_ReturnsSuccess(){
+
+        
+        //MOCKING
+//        let config = URLSessionConfiguration.ephemeral
+//        config.protocolClasses = [MockURLProtocol.self]
+//        let urlSession = URLSession(configuration: config)
+        
+        let jsonString = "{\"status\":\"ok\"}"
+        MockURLProtocol.stubResponseData = jsonString.data(using: .utf8) //converted json to data assigned to stubData
+        
+
+        
+        
         //Arrange
         
         // update plist to run not secured http
-        let sut = SignUpWebService(urlString: "http://appsdeveloperblog.com:8080/signup-mock-service/users")
         
-        let signUpFormRequestModel = SignUpFormRequestModel(firstName: "Anton", lastName: "Vel", email: "test@test.com", password: "12345678")
+//        let sut = SignUpWebService(urlString: "http://appsdeveloperblog.com:8080/signup-mock-service/users")
+        //MOCKING
+//         sut = SignUpWebService(urlString: "http://appsdeveloperblog.com:8080/signup-mock-service/users", urlSession: urlSession)
+        //END MOCKING
+        
+        
+//        let signUpFormRequestModel = SignUpFormRequestModel(firstName: "Anton", lastName: "Vel", email: "test@test.com", password: "12345678")
         // async method to wait for completion
         let expectation = self.expectation(description: "Signup WebService Response wait expectation") //EXP1
         
