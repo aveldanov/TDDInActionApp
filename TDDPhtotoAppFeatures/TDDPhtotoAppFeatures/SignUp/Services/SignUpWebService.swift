@@ -13,9 +13,6 @@ class SignUpWebService{
     //mocking
     
     private var urlSession: URLSession
-    
-    
-    
     private var urlString: String
     
     init(urlString: String, urlSession: URLSession = .shared){
@@ -40,11 +37,12 @@ class SignUpWebService{
         
         
         //GET
-        print(urlSession)
-        let dataTask = URLSession.shared.dataTask(with: request) { data, response, error in
+        let dataTask = urlSession.dataTask(with: request) { data, response, error in
             //TODO handle error
             
             if let data = data {
+                print("urlSession2", self.urlSession)
+
                 let signUpResponseModel = try? JSONDecoder().decode(SignUpResponseModel.self, from: data)
                 
                 completion(signUpResponseModel, nil)
